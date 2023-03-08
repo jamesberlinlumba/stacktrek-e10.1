@@ -20,7 +20,7 @@ public class Book {
     }
     public void addBook(String bookName) {
         if (!books.containsValue(bookName)) {
-            books.put(books.hashCode(), bookName);
+            books.put(bookName.hashCode(), bookName);
         }
     }
 

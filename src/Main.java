@@ -11,14 +11,14 @@ public class Main {
         System.out.println(book.viewBooks());
         book.removeBook(-1383388997);
         System.out.println(book.viewBooks());
-        book.addBook("book 3");
+        book.addBook("book 2");
         System.out.println(book.viewBooks());
-        book.addBook("book 3");
+        book.addBook("book 2");
         System.out.println(book.viewBooks());
 
         Book libro = Book.getInstance();
         System.out.println("Libro: " + libro.viewBooks());
-        libro.removeBook("book 2");
+        libro.removeBook("book 3");
         System.out.println("Libro: " + libro.viewBooks());
     }
 }
