@@ -25,9 +25,9 @@ public class Book {
     }
 
     public void removeBook(int bookId) {
-        books.remove(bookId);
-
-
+        if (books.containsKey(bookId)) {
+            books.remove(bookId);
+        }
     }
 
     public void removeBook(String bookName) {
